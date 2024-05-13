@@ -1,0 +1,5 @@
+git+https://github.com/MihaMarkic/tflearn.git@fix/is_sequence_missing
+nltk
+numpy
+tensorflow
+streamlit
