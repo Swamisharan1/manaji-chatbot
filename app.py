@@ -10,6 +10,7 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 import random
 import json
+import os
 
 # URLs of the intents file and the trained model in your GitHub repo
 intents_url = "https://raw.githubusercontent.com/Swamisharan1/manaji-chatbot/master/skincare.json"
@@ -42,6 +43,12 @@ labels = sorted(labels)
 # Fetch the trained model
 response = requests.get(model_url, allow_redirects=True)
 open('model.h5', 'wb').write(response.content)
+# Check the file size
+file_size = os.path.getsize('model.h5')
+print(f'Downloaded file size: {file_size} bytes')
+
+# Load the trained model
+model = tf.keras.models.load_model('model.h5')
 
 # Load the trained model
 model = tf.keras.models.load_model('model.h5')
