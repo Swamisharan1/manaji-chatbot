@@ -1,0 +1,773 @@
+{
+   "intents":[
+ {
+   "tag": "greeting",
+   "patterns": [
+      "Hi",
+      "How are you?",
+      "Is anyone there?",
+      "Hello",
+      "Good day",
+      "What's up",
+      "how are ya",
+      "heyy",
+      "whatsup",
+      "??? ??? ??"
+   ],
+   "responses": [
+      "Hello!",
+      "Good to see you again!",
+      "Hi there, how can I help?"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "goodbye",
+   "patterns": [
+      "cya",
+      "see you",
+      "bye bye",
+      "See you later",
+      "Goodbye",
+      "I am Leaving",
+      "Bye",
+      "Have a Good day",
+      "talk to you later",
+      "ttyl",
+      "i got to go",
+      "gtg"
+   ],
+   "responses": [
+      "Sad to see you go :(",
+      "Talk to you later",
+      "Goodbye!",
+      "Come back soon"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "creator",
+   "patterns": [
+      "what is the name of your developers",
+      "what is the name of your creators",
+      "what is the name of the developers",
+      "what is the name of the creators",
+      "who created you",
+      "your developers",
+      "your creators",
+      "who are your developers",
+      "developers",
+      "you are made by",
+      "you are made by whom",
+      "who created you",
+      "who create you",
+      "creators",
+      "who made you",
+      "who designed you"
+   ],
+   "responses": [
+      "Skincare Co"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "name",
+   "patterns": [
+      "name",
+      "your name",
+      "do you have a name",
+      "what are you called",
+      "what is your name",
+      "what should I call you",
+      "whats your name?",
+      "what are you",
+      "who are you",
+      "who is this",
+      "what am i chatting to",
+      "who am i taking to",
+      "what are you"
+   ],
+   "responses": [
+      "You can call me TwakShakti.",
+      "I'm TwakShakti",
+      "I am TwakShakti, your personalised skincare assistant.",
+      "I am TwakShati, a virtual dermat."
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "skintype",
+   "patterns": [
+      "how to identify skin type ?",
+      "What are the methods for determining one's skin type?",
+      "Can you provide guidance on figuring out my skin type?",
+      "skin type",
+      "How can I classify my skin type accurately?",
+      "What are the indicators used to identify different skin types?",
+      "Could you explain the process of determining whether my skin is oily, dry, or combination?",
+      "What factors should I consider when assessing my skin type?",
+      "Are there any specific characteristics that help in identifying skin types?",
+      "Can you offer insights on how to differentiate between oily, dry, and normal skin?",
+      "What are the telltale signs that indicate a particular skin type?",
+      "How can I self-diagnose my skin type at home?",
+      "How to categorize my skin type",
+      "what is my skin type",
+      "which is my skin type",
+      "type of skin",
+      "different skin types"
+   ],
+   "responses": [
+      "To identify your skin type more accurately, you can perform a simple test:Cleanse your face: Wash your face with a gentle cleanser to remove any dirt, oil, or makeup.Wait for an hour: Allow your skin to rest without applying any skincare products.Observe your skin:Oily skin: If your face appears shiny or greasy, especially in the T-zone, you likely have oily skin.Dry skin: If your skin feels tight, rough, or looks dull, you may have dry skin.Combination skin: If you notice that some areas of your face are oily (typically the forehead, nose, and chin) while others are dry (usually the cheeks), you likely have combination skin.Normal skin: If your skin feels balanced, with no excessive oiliness or dryness, you may have normal skin."
+   ],
+     
+   "context_set": ""
+},
+ {
+   "tag": "dryskin",
+   "patterns": [
+      "What is dry skin?",
+      "Could you explain what dry skin is",
+      "What exactly constitutes dry skin?",
+      "Can you define dry skin for me",
+      "I'm curious, what does it mean to have dry skin?",
+      "What are the characteristics of dry skin?",
+      "Could you describe the condition known as dry skin?",
+      "What are the symptoms of dry skin?",
+      "I'd like to know more about dry skin, can you provide some insight?",
+      "Could you elaborate on the concept of dry skin?",
+      "Can i get your phone number",
+      "how can i call you",
+      "What factors contribute to the development of dry skin?"
+     
+   ],
+   "responses": [
+      "Dry skin is a skin type characterized by a lack of moisture and oil, often resulting in a dull, rough, or flaky appearance. It can be caused by various factors such as genetics, environmental conditions, aging, or improper skincare routines. People with dry skin may experience tightness, itching, or discomfort, especially after cleansing or exposure to harsh weather conditions."
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "oilyskin",
+   "patterns": [
+      "how to identify oily skin",
+      "how is oily skin",
+      "What characterizes oily skin?",
+      "How would you define oily skin",
+      "Can you explain what oily skin is?",
+      "What are the features of oily skin?",
+      "Could you describe oily skin for me?",
+      "What are the typical traits of oily skin?",
+      "How do you identify oily skin?",
+      "What constitutes oily skin?",
+      "Can you provide an overview of oily skin?",
+      "What do we mean by oily skin?",
+      "oily skin",
+       "oily"
+   ],
+   "responses": [
+     "Oily skin is a skin type characterized by excessive production of sebum, resulting in a shiny or greasy appearance and increased susceptibility to acne and blackheads especially in areas such as the forehead, nose, and chin (known as the T-zone)"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "combination_skin",
+   "patterns": [
+      "what is combination skin",
+      "What is the definition of combination skin?",
+      "Could you explain what combination skin means?",
+      "How would you describe combination skin?",
+      "fee per semester",
+      "Can you define combination skin for me?",
+      "What exactly is meant by combination skin?",
+      "What are the characteristics of combination skin?",
+      "Could you describe the features of combination skin?",
+      "What distinguishes combination skin from other skin types?",
+      "Can you explain the concept of combination skin?",
+      "How do you identify if someone has combination skin?",
+      "combination skin",
+      "how to identify combination skin"
+      
+   ],
+   "responses": [
+      "Combination skin is a skin type characterized by having both oily and dry areas on the face. Typically, the T-zone (forehead, nose, and chin) tends to be oily, while the cheeks and other areas may be dry or normal."
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "pigmentation",
+   "patterns": [
+      "what is pigmentation",
+      "Could you explain the concept of pigmentation in skin?",
+      "What exactly causes pigmentation on the skin?",
+      "What is the role of melanin in pigmentation?",
+      "Can you define skin pigmentation and its types?",
+      "How does pigmentation affect skin tone?",
+      "What factors contribute to uneven pigmentation?",
+      "Why do some people experience pigmentation changes with age?",
+      "Could you elaborate on the differences between hyperpigmentation and hypopigmentation?",
+      "pigmentation"
+   ],
+   "responses": [
+      "Pigmentation refers to the coloring of the skin, caused by the presence of a pigment called melanin. Melanin is produced by melanocytes, specialized cells in the skin, and determines the skin's color. Pigmentation can vary greatly among individuals and is influenced by factors such as genetics, sun exposure, hormones, and skin damage. Issues with pigmentation can result in uneven skin tone, dark spots, freckles, or other discolorations."
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "acne_scars",
+   "patterns": [
+      "what are acne scars",
+      "acne scars",
+      "scars",
+      "What exactly are acne scars?",
+      "Could you explain what acne scars are?",
+      "Can you define acne scars for me?",
+      "define acne scars",
+      "What do acne scars look like?",
+      "How do acne scars form?",
+      "explain acne scars"
+   ],
+   "responses": [
+      "Acne scars are permanent changes to the skin's texture caused by severe acne. They include depressions like ice pick, boxcar, and rolling scars, as well as raised hypertrophic scars. Post-inflammatory hyperpigmentation may also occur. Treatment options vary depending on the type and severity of scars"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "acne_pimples",
+   "patterns": [
+      "acne",
+      "pimples",
+      "What is acne and how does it differ from pimples",
+      "Can you define acne and pimples for me?",
+      "explain acne",
+      "explain pimples",
+      "What are acne and pimples, and what causes them?",
+      "Could you provide some information on acne and pimples?",
+      "Can you give me an overview of acne and pimples?",
+      "tell me about acne",
+      "tell me about pimples"
+   ],
+   "responses": [
+      "Acne, commonly known as pimples, is a skin condition that occurs when hair follicles become clogged with oil and dead skin cells. This can result in the formation of whiteheads, blackheads, or pimples, which are inflamed lesions filled with pus. Acne typically appears on the face, neck, chest, back, and shoulders. It can be caused by factors such as hormonal changes, genetics, certain medications, and bacteria. Treatment options include topical creams, oral medications, and procedures like chemical peels or laser therapy, depending on the severity of the condition"
+   ],
+        "context_set": ""
+},
+ {
+   "tag": "open_pores",
+   "patterns": [
+      "open pores",
+      "pores",
+      "What is open pores",
+      "Can you open pores?",
+      "explain open pores",
+      "explain pores",
+      "What are open pores",
+      "Could you provide some information on open pores",
+      "Can you give me an overview of open pores?",
+      "tell me about open pores",
+      "tell me about pores"
+   ],
+   "responses": [
+      "Open pores refer to enlarged or visibly prominent pores on the skin's surface, often found on the face, particularly in the T-zone (forehead, nose, and chin). They occur when excess oil, debris, and dead skin cells accumulate, leading to dilation of the pore openings. "
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "darkcircles",
+   "patterns": [
+      "what are dark circles",
+      "What causes dark circles under the eyes?",
+      "Can you explain the appearance of dark circles?",
+      "How do dark circles develop?",
+      "What contributes to the formation of dark circles?",
+      "What factors lead to the presence of dark circles?",
+      "Why do some people have dark circles under their eyes?",
+      "What document are required for admission",
+      "What are the reasons behind dark circles?",
+      "How would you define dark circles?",
+      "dark circles"
+   ],
+   "responses": [
+      "I would describe dark circles as hyperpigmented areas that appear under the eyes, typically presenting as a darker coloration than the surrounding skin"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "sensitiveskin",
+   "patterns": [
+      "what is sensitive skin",
+      "Could you explain what sensitive skin is",
+      "What exactly constitutes sensitive skin",
+      "Can you define sensitive skin for me?",
+      "How would you describe sensitive skin?",
+      "What are the characteristics or symptoms of sensitive skin?",
+      "What characterizes someone as having sensitive skin?",
+      "describe sensitive skin"
+   ],
+   "responses": [
+      "I would describe sensitive skin as a skin type that is more prone to reactions and irritation compared to other skin types. Individuals with sensitive skin often experience discomfort, such as stinging, burning, itching, or redness, in response to various factors, including skincare products, environmental factors, and lifestyle choices. "
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "treat_acne",
+   "patterns": [
+      "treat acne",
+      "how to treat acne",
+      "how should i treat acne",
+      "treating acne",
+      "which product should i use to treat acne",
+      "acne treat",
+      "what to use for acne",
+      "prescribe something for acne"
+   ],
+   "responses": [
+      "To treat acne, maintain a regular skincare routine with gentle cleansing, use non-comedogenic products, and consider over-the-counter treatments like benzoyl peroxide or salicylic acid. For treating acne I recommend you using Skincare Co. 2% Salicylic Acid Face Serum"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "treat_acne_scars",
+   "patterns": [
+      "treat acne scars",
+      "how to treat acne scars",
+      "how should i treat acne scars",
+      "treating acne",
+      "which product should i use to treat acne scars",
+      "acne scars treat",
+      "what to use for acne scars",
+      "prescribe something for acne scars",
+      "how to treat scars",
+      "scars treatment"
+   ],
+   "responses": [
+      "Acne scars can be treated with topical treatments containing ingredients like retinoids and vitamin C to promote skin regeneration. Procedures like chemical peels or microneedling can also help improve skin texture and reduce the appearance of scars.I would recommend you using Skincare Co. 0.1% Retinol Serum "
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "treat_pigmentation",
+   "patterns": [
+      "treat pigmentation",
+      "how to treat pigmentation",
+      "how should i treat pigmentation",
+      "treating pigmentation",
+      "which product should i use to treat pigmentation",
+      "pigmentation treat",
+      "what to use for pigmentation",
+      "prescribe something for pigmentation",
+      "how to treat pigmentation",
+      "pigmentation treatment"
+   ],
+   "responses": [
+      "To treat pigmentation, one can use topical treatments such as hydroquinone, retinoids, or vitamin C serums to lighten dark spots. Additionally, procedures like chemical peels, laser therapy, or microdermabrasion can help improve skin tone and reduce pigmentation. Sun protection with sunscreen is crucial to prevent further darkening of pigmented areas.Using Skincare Co. 10% Vitamin C Face Serum could be a great choice !!"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "treat_dark_circles",
+   "patterns": [
+       "treat dark under eye",
+      "how to treat dark under eye",
+      "how should i treat dark under eye",
+      "treating dark under eye",
+      "which product should i use to treat dark under eye",
+      "dark under eye treat",
+      "what to use for dark under eye",
+      "prescribe something for dark under eye",
+      "how to treat dark under eye",
+      "dark under eye treatment",
+       "treat dark circles",
+      "how to treat dark circles",
+      "how should i treat dark circles",
+      "treating dark circles",
+      "which product should i use to treat dark circles",
+      "dark circles treat",
+      "what to use for dark circles",
+      "prescribe something for dark circles",
+      "how to treat dark circles",
+      "dark circles treatment"
+   ],
+   "responses": [
+      "To treat dark circles, prioritize adequate sleep, apply cold compresses to reduce puffiness, and use eye creams with brightening ingredients like vitamin C or retinol for long-term improvement. Skincare Co. 5& Caffeine Under Eye Serum would be a great choice !!"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "treat_open_pores",
+   "patterns": [
+      "treat open pores",
+      "how to treat open pores",
+      "how should i treat open pores",
+      "treating open pores",
+      "which product should i use to treat open pores",
+      "open pores treat",
+      "what to use for open pores",
+      "prescribe something for open pores",
+      "how to treat open pores",
+      "open pores treatment"
+   ],
+   "responses": [
+      "To treat open pores, cleanse the skin regularly, use exfoliating products containing salicylic or glycolic acid and apply non-comedogenic moisturizers. I would recommend you using Skincare Co. 10% Niacinamide Face Serum."
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "placement",
+   "patterns": [
+      "What is college placement",
+      "Which companies visit in college",
+      "What is average package",
+      "companies visit",
+      "package",
+      "About placement",
+      "placement",
+      "recruitment",
+      "companies"
+   ],
+   "responses": [
+      "To know about placement visit <a target=\"_blank\" href=\"PLACEMENT INFORMATION LINK FROM YOUR UNIVERSITY WEBSITE IF THEY HAVE\">here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "ithod",
+   "patterns": [
+      "Who is HOD",
+      "Where is HOD",
+      "it hod",
+      "name of it hod"
+   ],
+   "responses": [
+      "All engineering departments have only one hod XYZ who available on (Place name)"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "computerhod",
+   "patterns": [
+      "Who is computer HOD",
+      "Where is computer HOD",
+      "computer hod",
+      "name of computer hod"
+   ],
+   "responses": [
+      "All engineering departments have only one hod XYZ who available on (PLACE NAME)"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "extchod",
+   "patterns": [
+      "Who is extc HOD",
+      "Where is  extc HOD",
+      "extc hod",
+      "name of extc hod"
+   ],
+   "responses": [
+      "Different school wise hod are different.So be more clear with your school or department"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "principal",
+   "patterns": [
+      "what is the name of principal",
+      "whatv is the principal name",
+      "principal name",
+      "Who is college principal",
+      "Where is principal's office",
+      "principal",
+      "name of principal"
+   ],
+   "responses": [
+      "XYZ is college principal and if you need any help then call your branch hod first.That is more appropriate"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "sem",
+   "patterns": [
+      "exam dates",
+      "exam schedule",
+      "When is semester exam",
+      "Semester exam timetable",
+      "sem",
+      "semester",
+      "exam",
+      "when is exam",
+      "exam timetable",
+      "exam dates",
+      "when is semester"
+   ],
+   "responses": [
+      "Here is the Academic Calendar  <a target=\"_blank\" href=\"YOUR ACADEMIC CALENDER\">website</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "admission",
+   "patterns": [
+      "what is the process of admission",
+      "what is the admission process",
+      "How to take admission in your college",
+      "What is the process for admission",
+      "admission",
+      "admission process"
+   ],
+   "responses": [
+      "Application can also be submitted online through the Unversity's  <a target=\"_blank\" href=\"LINK OF ADMISSION DOCUMENT\">website</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "scholarship",
+   "patterns": [
+      "scholarship",
+      "Is scholarship available",
+      "scholarship engineering",
+      "scholarship it",
+      "scholarship ce",
+      "scholarship mechanical",
+      "scholarship civil",
+      "scholarship chemical",
+      "scholarship for AI/ML",
+      "available scholarships",
+      "scholarship for computer engineering",
+      "scholarship for IT engineering",
+      "scholarship for mechanical engineering",
+      "scholarship for civil engineering",
+      "scholarship for chemical engineering",
+      "list of scholarship",
+      "comps scholarship",
+      "IT scholarship",
+      "mechanical scholarship",
+      "civil scholarship",
+      "chemical scholarship",
+      "automobile scholarship",
+      "first year scholarship",
+      "second year scholarship",
+      "third year scholarship",
+      "fourth year scholarship"
+   ],
+   "responses": [
+      "Many government scholarships are supported by our university. For details and updates visit <a target=\"_blank\" href=\"(SCHOLARSHIP DETAILS LINK)\">here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "facilities",
+   "patterns": [
+      "What facilities college provide",
+      "College facility",
+      "What are college facilities",
+      "facilities",
+      "facilities provided"
+   ],
+   "responses": [
+      "Our university's Engineering department provides fully AC Lab with internet connection, smart classroom, Auditorium, library,canteen"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "college intake",
+   "patterns": [
+      "max number of students",
+      "number of seats per branch",
+      "number of seats in each branch",
+      "maximum number of seats",
+      "maximum students intake",
+      "What is college intake",
+      "how many stundent are taken in each branch",
+      "seat allotment",
+      "seats"
+   ],
+   "responses": [
+      "For IT, Computer and extc 60 per branch and seat may be differ for different department."
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "uniform",
+   "patterns": [
+      "college dress code",
+      "college dresscode",
+      "what is the uniform",
+      "can we wear casuals",
+      "Does college have an uniform",
+      "Is there any uniform",
+      "uniform",
+      "what about uniform",
+      "do we have to wear uniform"
+   ],
+   "responses": [
+      "ENTER YOUR OWN UNIVERSITY UNIFORM CIRCULER"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "committee",
+   "patterns": [
+      "what are the different committe in college",
+      "different committee in college",
+      "Are there any committee in college",
+      "Give me committee details",
+      "committee",
+      "how many committee are there in college"
+   ],
+   "responses": [
+      "For the various committe in college contact this number: ADD NUMBER"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "random",
+   "patterns": [
+      "I love you",
+      "Will you marry me",
+      "Do you love me"
+   ],
+   "responses": [
+      "I am not program for this, please ask appropriate query"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "swear",
+   "patterns": [
+      "fuck",
+      "bitch",
+      "shut up",
+      "hell",
+      "stupid",
+      "idiot",
+      "dumb ass",
+      "asshole",
+      "fucker"
+   ],
+   "responses": [
+      "please use appropriate language",
+      "Maintaining decency would be appreciated"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "vacation",
+   "patterns": [
+      "holidays",
+      "when will semester starts",
+      "when will semester end",
+      "when is the holidays",
+      "list of holidays",
+      "Holiday in these year",
+      "holiday list",
+      "about vacations",
+      "about holidays",
+      "When is vacation",
+      "When is holidays",
+      "how long will be the vacation"
+   ],
+   "responses": [
+      "Academic calender is given to you by your class-soordinators after you join your respective classes"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "sports",
+   "patterns": [
+      "sports and games",
+      "give sports details",
+      "sports infrastructure",
+      "sports facilities",
+      "information about sports",
+      "Sports activities",
+      "please provide sports and games information"
+   ],
+   "responses": [
+      "Our university encourages all-round development of students and hence provides sports facilities in the campus. For more details visit<a target=\"_blank\" href=/\"(LINK IF HAVE)\">here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "salutaion",
+   "patterns": [
+      "okk",
+      "okie",
+      "nice work",
+      "well done",
+      "good job",
+      "thanks for the help",
+      "Thank You",
+      "its ok",
+      "Thanks",
+      "Good work",
+      "k",
+      "ok",
+      "okay"
+   ],
+   "responses": [
+      "I am glad I helped you",
+      "welcome, anything else i can assist you with?"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "task",
+   "patterns": [
+      "what can you do",
+      "what are the thing you can do",
+      "things you can do",
+      "what can u do for me",
+      "how u can help me",
+      "why i should use you"
+   ],
+   "responses": [
+      "I can answer to low-intermediate questions regarding college",
+      "You can ask me questions regarding college, and i will try to answer them"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "ragging",
+   "patterns": [
+      "ragging",
+      "is ragging practice active in college",
+      "does college have any antiragging facility",
+      "is there any ragging cases",
+      "is ragging done here",
+      "ragging against",
+      "antiragging facility",
+      "ragging juniors",
+      "ragging history",
+      "ragging incidents"
+   ],
+   "responses": [
+      "We are Proud to tell you that our college provides ragging free environment, and we have strict rules against ragging"
+   ],
+   "context_set": ""
+},{
+   "tag": "manaji",
+   "patterns": [
+      "who is manaji",
+      "where does manaji leaves",
+      "does manaji drink tea",
+      "what does manaji likes",
+      "where does manaji works"
+   ],
+   "responses": [
+      "Let’s talk about Manaji, our friend from the vibrant city of Mumbai. She’s a dedicated employee at Morningstar with a serious chai addiction. But here’s a fun fact - sometimes, she swaps her chai for coffee! It’s as surprising as seeing a cat bark or a fish climb a tree. And did we mention she loves her sleep? Yes, she can give any sloth a run for its money! But that’s just Manaji, always keeping things interesting and unpredictable in her own adorable way."
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "hod",
+   "patterns": [
+      "hod",
+      "hod name",
+      "who is the hod"
+   ],
+   "responses": [
+      "HODs differ for each branch, please be more specific like: (HOD it)"
+   ],
+   "context_set": ""
+}
+]
+}
