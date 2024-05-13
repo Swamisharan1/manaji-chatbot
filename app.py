@@ -1,20 +1,18 @@
 import requests
 import streamlit as st
 import nltk
-nltk.download('punkt')
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
 
 import numpy
-import tensorflow
+import tensorflow as tf
+from tensorflow.keras.models import load_model
 import random
 import json
-import tflearn
-import os
 
 # URLs of the intents file and the trained model in your GitHub repo
 intents_url = "https://raw.githubusercontent.com/Swamisharan1/manaji-chatbot/master/skincare.json"
-model_url = "https://github.com/Swamisharan1/manaji-chatbot/raw/master/model.tflearn"
+model_url = "https://github.com/Swamisharan1/manaji-chatbot/raw/master/model.h5"
 
 # Fetch the intents file
 response = requests.get(intents_url)
@@ -42,17 +40,10 @@ labels = sorted(labels)
 
 # Fetch the trained model
 response = requests.get(model_url, allow_redirects=True)
-open('model.tflearn', 'wb').write(response.content)
+open('model.h5', 'wb').write(response.content)
 
 # Load the trained model
-net = tflearn.input_data(shape=[None, len(words)])
-net = tflearn.fully_connected(net, 8)
-net = tflearn.fully_connected(net, 8)
-net = tflearn.fully_connected(net, len(labels), activation="softmax")
-net = tflearn.regression(net)
-
-model = tflearn.DNN(net)
-model.load("model.tflearn")
+model = load_model('model.h5')
 
 # Function to convert a sentence into a bag of words
 def bag_of_words(s, words):
@@ -74,7 +65,7 @@ input_text = st.text_input("You: ")
 
 if input_text:
     # Predict the category
-    results = model.predict([bag_of_words(input_text, words)])
+    results = model.predict([bag_of_words(input_text, words).reshape(-1, len(words))])
     results_index = numpy.argmax(results)
     tag = labels[results_index]
 
