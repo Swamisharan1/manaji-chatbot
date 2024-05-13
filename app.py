@@ -44,7 +44,7 @@ response = requests.get(model_url, allow_redirects=True)
 open('model.h5', 'wb').write(response.content)
 
 # Load the trained model
-model = load_model('model.h5')
+model = tf.keras.models.load_model('model.h5')
 
 # Function to convert a sentence into a bag of words
 def bag_of_words(s, words):
